@@ -8,7 +8,7 @@
 ## Objetivos
 
 * Pasar cifrado cesar de javascript 5 a ES6 manualmente.
-* Actualizar la vista del cifrado cesar: recuerden que esa vez usaron alertas, sin embargo deben actualizar eso a  un input donde ingresar los datos y un botón que ejecute la función, el resultado se debe mostrar en la pantalla.
+* Actualizar la vista del cifrado cesar: Ingresar los datos mediante un input y un botón que ejecute la función, el resultado se debe mostrar en la pantalla.
  
 ## Tecnologías 
 
