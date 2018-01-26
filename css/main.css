@@ -1,0 +1,178 @@
+/* Clases generales
+----------------------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+  font-family: 'Raleway', sans-serif !important;
+  text-align: center;
+  background-image: url('../assets/images/codigo.jpg');
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.letter-white {
+  color: white;
+  font-weight: bolder;
+}
+
+.letter {
+  color: rgb(17, 24, 7);
+  font-weight: bold;
+}
+
+
+#footer {
+  position: fixed;
+  text-align: center;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgb(53, 53, 53);
+}
+
+/* FIRST PAGE - STYLE FOR THE PRINCIPAL INDEX
+-----------------------------------------------------------------*/
+.title {
+  color: rgb(3, 3, 3);
+  font-weight: bold;
+}
+
+.btncolor {
+  background-color: rgb(129, 151, 3);
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+}
+
+.btncolororange {
+  background-color: rgb(253, 167, 8);
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+}
+
+/* MAIN GUTTERS */
+/*MENU HAMBURGUESA*/
+.main-hamburger {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  height: 2px;
+  width: 24px;
+  background: #d0d0d0;
+}
+
+.main-hamburger::before, .main-hamburger::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 24px;
+  display: block;
+  background: #d0d0d0;
+}
+
+.main-hamburger::before {
+  top: -8px;
+}
+
+.main-hamburger::after {
+  top: 8px;
+}
+
+/*STYLE FOR THE NAVEGATOR*/
+.bg-reverse {
+  background-color: #383e42;
+  color: #ffffff;
+}
+
+/*Importante los elementos primero, luego id, clases, asi sucesivamente*/
+a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+nav {
+  padding: 14px;
+  overflow: hidden; /* HIDDEN: El contenido es recortado y no se muestran barras de posición. (se ajusta el texto y no se muestra scroll)*/
+} 
+
+.nav-left {
+  font-size: 1.25rem;
+  float: left;
+  padding-left: 35px;
+}
+
+.nav-right {
+  float: right;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-header {
+  background-image: url("../assets/images/2.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* cover: Cambiar el tamaño de la imagen de fondo para cubrir todo el contenedor, incluso si tiene que estirar la imagen o cortar un poco de uno de los bordes*/
+  background-position: center center;
+}
+
+.overlay { /* OVERLAY: cubre la seccion header separado de nav*/
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5rem 0;
+}
+
+
+.view-mobile {
+  display: block;
+}
+
+.view-desktop {
+  display: none;
+}
+
+/* STYLE ONLY FOR THE DESKTOP*/
+ul li {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+
+/*GRID MOVIL AND DESKTOP*/
+/*GRID MOVIL/ TABLET Esto hace que sea responsive*/
+@media (min-width: 768px) {
+    
+ section {
+   overflow: auto;
+   display: flex;
+ }
+ .overlay {
+   padding: 10rem 0;
+ }
+ 
+ .view-mobile {
+   display: none;
+ }
+ 
+ .view-desktop {
+   display: block;
+ }
+}
+
+/*GRID DESKTOP*/
+@media (min-width: 1200px) {
+ 
+}

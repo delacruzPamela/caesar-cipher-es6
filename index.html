@@ -3,9 +3,74 @@
 <head>
   <meta charset="utf-8">
   <title>Cifrado de Cesar</title>
+  <!--Framework bootstrap CSS-->
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <!--Fonts google-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!--Enlazamos nuestro grid-->
+  <link rel='stylesheet' href="css/main-sin-gutter.css">
+  <!--Enlazamos nuestro main css-->
+  <link rel='stylesheet' href="css/main.css">
 </head>
 
 <body>
-  <script type="text/javascript" src="js/app.js"> </script>
+  <!--HEADER-->
+  <header class="bg-reverse">
+    <!--NAVIGATOR-->
+    <nav>
+      <!--Nav left-->
+      <div class="nav-left">
+        <a href="#">JAVASCRIPT ES6</a>
+      </div>
+      <!--Se muestra el menu hamburguesa a medida que la pantalla se encoja-->
+      <div class="nav-right view-mobile">
+        <a href="#" class="main-hamburger"></a>
+      </div>
+    </nav>
+    <!--VISTA PRINCIPAL-->
+    <div class="bg-header text-center">
+      <div class="overlay">
+        <h1>CAESAR CIPHER</h1>
+        <br>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-md-6 col-md-offset-3 col-sm-offset-2 ">
+            <form>
+              <div class="form-group">
+                <input id="" type="text" class="form-control input-lg" placeholder="Ingresa la palabra que desea cifrar o descifrar">
+                <br>
+                <button type="submit" class="btn btncolororange">CIFRAR</button>
+                <button type="" class="btn btncolor">DESCIFRAR</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!--SECTION ONE-->
+  <section>
+    <div class="container"> <!--Esta caja contendra todo el contenido-->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+          <h2 class="letter">RESULTADO DEL CRIPTOGRAMA</h2>
+          <form name="sentMessage" id="" novalidate> <!--Creamos formulario-->
+            <textarea class="form-control" id="message" rows="5" placeholder="Message"></textarea>
+            <br>
+            <div class="submit-button">
+              <button type="submit" class="btn btncolor" id="">LIMPIAR</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--Enlazamos JQuery-->
+  <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
+  <!--Enlazamos bootstrap grillas-->
+  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <!--Enlazamos app.js para darle funcionabilidad a nuestra estructura-->
+  <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
 </body>
 </html>
