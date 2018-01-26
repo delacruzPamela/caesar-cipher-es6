@@ -15,7 +15,7 @@
 * **Texto original:** ABCDEFGHIJKLMNOPQRSTUVWXYZ
 * **Texto codificado:** HIJKLMNOPQRSTUVWXYZABCDEFG
 
-### RESTRICCIONES
+### Restricciones
 
 1. El programa es capaz de cifrar y descifrar tanto letras mayúsculas como minúsculas. La fórmula para descifrar es: **(x - n) % 26**
 
